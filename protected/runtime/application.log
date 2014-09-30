@@ -1,0 +1,18 @@
+2014/09/30 00:26:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_inventario.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2014/09/30 01:44:50 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_estado' already exists. The SQL statement executed was: CREATE TABLE `tbl_estado` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`estado` varchar(50) NOT NULL,
+	`create_time` datetime DEFAULT NULL,
+	`create_user_id` int(11) DEFAULT NULL,
+	`update_time` datetime DEFAULT NULL,
+	`update_user_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB.
+2014/09/30 01:45:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_tipo_producto' already exists. The SQL statement executed was: CREATE TABLE `tbl_tipo_producto` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`tipo_producto` varchar(50) NOT NULL,
+	`activo` bool DEFAULT 0,
+	`create_time` datetime DEFAULT NULL,
+	`create_user_id` int(11) DEFAULT NULL,
+	`update_time` datetime DEFAULT NULL,
+	`update_user_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB.
